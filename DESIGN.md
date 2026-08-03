@@ -17,7 +17,7 @@
 
 - Goals: Let research peers and hiring collaborators understand Jiahao's current role, background, and research focus quickly; provide an extensible publication-ready structure.
 - Non-goals: Marketing site, personal blog, automatic publication sync, or complete CV replacement.
-- Success signals: Current role and research topics are clear above the fold; visitors can find education, experience, projects, and contact details in one page.
+- Success signals: Current role and research topics are clear above the fold; visitors can find experience, education, publications, honors, and contact details in one page.
 
 ## Personas and jobs
 
@@ -27,9 +27,9 @@
 
 ## Information architecture
 
-- Primary navigation: Research, Experience, Publications, Contact.
+- Primary navigation: Experience, Education, Publications, Contact.
 - Core routes/screens: One anchored page.
-- Content hierarchy: Profile → News → Research Interests → Experience → Education → Selected Projects → Publications → Honors → Contact.
+- Content hierarchy: Profile → News → Experience → Education → Publications → Honors → Contact.
 
 ## Design principles
 
@@ -45,12 +45,12 @@
 - Spacing/layout rhythm: Centered 1000px page, generous but not theatrical section spacing, two-column section labels on desktop.
 - Shape/radius/elevation: Flat white academic document, circular profile image, thin borders, no decorative shadow.
 - Motion: Native anchor scrolling only; no entrance or decorative animation.
-- Imagery/iconography: One profile image; publication thumbnails only when real entries are added; no icon library.
+- Imagery/iconography: One profile image, restrained company wordmarks in Experience, and publication thumbnails only when real entries are added; no icon library.
 
 ## Components
 
 - Existing components to reuse: Static HTML shell, deployment workflow, favicon, SEO files.
-- New/changed components: Academic profile, compact navigation, news list, research grid, chronology rows, project rows, publication empty state, honors list.
+- New/changed components: Academic profile, compact navigation, news list, logo-supported chronology rows, keyword lists, publication empty state, honors list.
 - Variants and states: Desktop two-column and mobile single-column layouts; empty and populated publication structures.
 - Token/component ownership: CSS variables and component rules in `styles.css`; factual content in `index.html`.
 
@@ -65,17 +65,17 @@
 ## Responsive behavior
 
 - Supported breakpoints/devices: Modern evergreen browsers from 390px phone to wide desktop; print stylesheet included.
-- Layout adaptations: Profile and section grids collapse below 760px; research grid and timelines collapse below 520px.
+- Layout adaptations: Profile and section grids collapse below 760px; timelines collapse below 520px.
 - Touch/hover differences: All core content is visible without hover; links remain native and easy to activate.
 
 ## Interaction states
 
-- Loading: All content is serverless static HTML; remote GitHub profile image is the only external visual request.
+- Loading: All content is serverless static HTML; only the GitHub profile image is an external visual request.
 - Empty: Publications use a neutral, non-claiming empty state.
 - Error: If the profile image fails, its dimensions remain reserved and text content is unaffected.
 - Success: Native link and email behavior.
 - Disabled: No disabled interactive elements.
-- Offline/slow network: All core files are local except the profile image; no external fonts, frameworks, analytics, or widgets.
+- Offline/slow network: All core text, layout, and company wordmarks are local; the profile image may fail without affecting the page structure.
 
 ## Content voice
 

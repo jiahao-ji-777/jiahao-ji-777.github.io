@@ -13,7 +13,9 @@ Then open <http://localhost:8000>.
 ## Content provenance
 
 - Current role: user-confirmed full-time Algorithm Researcher at Noitom Robotics.
-- Education, prior experience, projects, honors, email, and Scholar URL: provided Chinese CV.
+- Education, prior experience, honors, email, and Scholar URL: provided Chinese CV.
+- Experience descriptions are intentionally limited to concise research keywords.
+- Company wordmarks are stored locally; Noitom is sourced from its official site and ByteDance from the public-domain text-logo copy on Wikimedia Commons.
 - CV source SHA256: `0d6e52bdb5d8ede746c78c114f0d61a9024df4766867a4057c631778df9439b1`.
 - Phone number and other unnecessary personal details are intentionally excluded.
 - Publications intentionally remain empty until the entries are explicitly approved for the public site.
@@ -24,7 +26,8 @@ Then open <http://localhost:8000>.
 .
 ├── .github/workflows/pages.yml  # GitHub Pages deployment
 ├── DESIGN.md                    # Design and content contract
-├── index.html                   # Profile and academic content
+├── assets/                      # Local company wordmarks
+├── index.html                   # Profile and academic content, including company wordmarks
 ├── styles.css                   # Responsive academic layout
 ├── script.js                    # Current footer year
 ├── favicon.svg
