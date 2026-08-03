@@ -4,104 +4,96 @@
 
 - Status: Active
 - Last refreshed: 2026-08-03
-- Primary product surfaces: Single-page academic portfolio at `jiahao-ji-777.github.io`
-- Evidence reviewed: User brief; public GitHub profile and repositories; live sites of Tanushree Banerjee, Yao-Chih Lee, Harry Ye, and Yash Belhe; no existing local site or design assets were present.
+- Primary product surfaces: Single-page academic homepage at `jiahao-ji-777.github.io`
+- Evidence reviewed: User feedback; public GitHub profile; Chinese CV `CV_Chinese (2).pdf`; live desktop/mobile references from `astrorix.github.io` and `tianxingchen.github.io` captured under `.omx/artifacts/visual-ralph/academic-homepage-reference/`.
 
 ## Brand
 
-- Personality: Curious, precise, grounded, youthful, technically confident.
-- Trust signals: Clear project provenance, direct repository links, restrained claims, visible research themes.
-- Avoid: Corporate template aesthetics, neon cyberpunk, dense CV walls, gratuitous gradients, fake metrics, or overstating forked work as original research.
+- Personality: Serious, clear, technically grounded, early-career, approachable.
+- Trust signals: Current role, education, focused research descriptions, dated experience, direct academic links, explicit empty publication state.
+- Avoid: Portfolio-style slogans, oversized typography, orbital graphics, decorative animations, dark mode, badge walls, inflated metrics, and unverified publication claims.
 
 ## Product goals
 
-- Goals: Establish a memorable academic identity; make research interests and selected work easy to scan; create a low-maintenance publishing base.
-- Non-goals: Full publication database, long-form CMS, analytics, or a complex JavaScript application.
-- Success signals: A visitor understands Jiahao's focus within 10 seconds and can reach relevant work or GitHub in one click.
+- Goals: Let research peers and hiring collaborators understand Jiahao's current role, background, and research focus quickly; provide an extensible publication-ready structure.
+- Non-goals: Marketing site, personal blog, automatic publication sync, or complete CV replacement.
+- Success signals: Current role and research topics are clear above the fold; visitors can find education, experience, projects, and contact details in one page.
 
 ## Personas and jobs
 
-- Primary personas: Research peers, prospective collaborators, lab leads, and technically curious visitors.
-- User jobs: Understand research direction, assess project fit, open technical work, and start a conversation.
-- Key contexts of use: Desktop research browsing, mobile link sharing, and quick review from a CV or application.
+- Primary personas: Academic collaborators, research engineers, lab leads, and technical recruiters.
+- User jobs: Identify Jiahao's research direction, scan relevant experience, verify academic background, and make contact.
+- Key contexts of use: Desktop research browsing, mobile sharing, CV/application links, and print/PDF capture.
 
 ## Information architecture
 
-- Primary navigation: About, Work, Notes, Contact.
-- Core routes/screens: One responsive page with anchored sections.
-- Content hierarchy: Positioning statement → research identity → selected work → notes → contact.
+- Primary navigation: Research, Experience, Publications, Contact.
+- Core routes/screens: One anchored page.
+- Content hierarchy: Profile → News → Research Interests → Experience → Education → Selected Projects → Publications → Honors → Contact.
 
 ## Design principles
 
-- Editorial, not ornamental: Use typography, whitespace, and grid tension as the primary visual system.
-- Evidence over performance: Every showcased item links to a public artifact and uses accurate ownership language.
-- One vivid signal: Cobalt blue provides energy while the rest of the palette stays neutral.
-- Tradeoffs: Static HTML keeps deployment and maintenance simple at the cost of automatic publication syncing.
-
-### Reference audit
-
-- Harry Ye: Borrow the thesis-like one-sentence hero and compact personal identity card; keep Jiahao's visual language more technical and less portfolio-like.
-- Tanushree Banerjee: Borrow explicit research questions and clear project provenance; avoid dense text and tag accumulation.
-- Yao-Chih Lee: Borrow the fast-scanning current-status signal and obvious academic utility links once CV/Scholar details exist; avoid employer-logo timelines until there is verified content.
-- Yash Belhe: Borrow compact, contribution-first paper rows when publications exist; do not imitate the intentionally bare visual styling.
-- Synthesis: Preserve the current editorial grid and cobalt signal color, add a research snapshot and recurring research questions, and leave academic links/publication rows contingent on real data.
+- Academic first: Information density and provenance matter more than visual novelty.
+- Quiet hierarchy: Typography, spacing, and thin rules organize the page without decorative UI.
+- Honest incompleteness: Missing publications or links stay visibly empty or hidden instead of being invented.
+- Tradeoffs: The site prioritizes clarity and maintainability over distinctive portfolio interactions.
 
 ## Visual language
 
-- Color: Warm paper background, near-black text, cobalt accent, inverted dark theme.
-- Typography: System sans for speed and clarity; restrained serif italics for a human editorial note.
-- Spacing/layout rhythm: Generous section spacing, asymmetric two-column compositions, thin dividers.
-- Shape/radius/elevation: Mostly square geometry; circular controls and orbital motifs; no drop shadows.
-- Motion: Soft entrance reveals, subtle image scale, micro-interactions under 800ms.
-- Imagery/iconography: Public GitHub avatar in monochrome; simple arrows and CSS orbital geometry.
+- Color: White paper, very light gray page background, navy text, muted blue-gray secondary text, restrained academic blue links.
+- Typography: Native/system sans-serif at conventional academic sizes.
+- Spacing/layout rhythm: Centered 1000px page, generous but not theatrical section spacing, two-column section labels on desktop.
+- Shape/radius/elevation: Flat white academic document, circular profile image, thin borders, no decorative shadow.
+- Motion: Native anchor scrolling only; no entrance or decorative animation.
+- Imagery/iconography: One profile image; publication thumbnails only when real entries are added; no icon library.
 
 ## Components
 
-- Existing components to reuse: None; greenfield static site.
-- New/changed components: Fixed navigation, hero portrait, section label, interest list, project rows, note cards, contact panel, theme toggle.
-- Variants and states: Featured/inverted project, regular project, enabled/coming-soon note, light/dark themes.
-- Token/component ownership: CSS custom properties in `styles.css`; semantic content in `index.html`; behavior in `script.js`.
+- Existing components to reuse: Static HTML shell, deployment workflow, favicon, SEO files.
+- New/changed components: Academic profile, compact navigation, news list, research grid, chronology rows, project rows, publication empty state, honors list.
+- Variants and states: Desktop two-column and mobile single-column layouts; empty and populated publication structures.
+- Token/component ownership: CSS variables and component rules in `styles.css`; factual content in `index.html`.
 
 ## Accessibility
 
 - Target standard: WCAG 2.2 AA where practical.
-- Keyboard/focus behavior: Visible focus rings, semantic links/buttons, skip link, anchor navigation.
-- Contrast/readability: High-contrast neutral palette and large text; decorative color is never the only content cue.
-- Screen-reader semantics: Landmark elements, heading order, descriptive labels, decorative visuals hidden.
-- Reduced motion and sensory considerations: `prefers-reduced-motion` disables reveals, scrolling, and animations.
+- Keyboard/focus behavior: Skip link, semantic anchors, visible focus outlines, no keyboard-only interactions.
+- Contrast/readability: High contrast text, conventional body size, no color-only status encoding.
+- Screen-reader semantics: Landmark elements, one H1, ordered headings, descriptive profile image alt text, valid time elements.
+- Reduced motion and sensory considerations: No scripted motion or animation.
 
 ## Responsive behavior
 
-- Supported breakpoints/devices: Modern evergreen browsers; compact phone through wide desktop.
-- Layout adaptations: Two-column hero and sections collapse to one column below 900px; project actions reflow below 640px.
-- Touch/hover differences: Core content does not depend on hover; tap targets are at least about 40px.
+- Supported breakpoints/devices: Modern evergreen browsers from 390px phone to wide desktop; print stylesheet included.
+- Layout adaptations: Profile and section grids collapse below 760px; research grid and timelines collapse below 520px.
+- Touch/hover differences: All core content is visible without hover; links remain native and easy to activate.
 
 ## Interaction states
 
-- Loading: Core text and CSS render without JavaScript; remote avatar has intrinsic dimensions.
-- Empty: Notes section includes an intentional "next up" state.
-- Error: If the avatar fails, its frame remains a designed neutral surface.
-- Success: Navigation scroll and contact links provide immediate feedback through native browser behavior.
-- Disabled: Coming-soon note is a non-interactive article with reduced emphasis.
-- Offline/slow network: All core assets are local except the GitHub avatar; no external fonts or frameworks.
+- Loading: All content is serverless static HTML; remote GitHub profile image is the only external visual request.
+- Empty: Publications use a neutral, non-claiming empty state.
+- Error: If the profile image fails, its dimensions remain reserved and text content is unaffected.
+- Success: Native link and email behavior.
+- Disabled: No disabled interactive elements.
+- Offline/slow network: All core files are local except the profile image; no external fonts, frameworks, analytics, or widgets.
 
 ## Content voice
 
-- Tone: Direct, thoughtful, technically literate, optimistic without hype.
-- Terminology: Prefer concrete research areas and verbs over vague claims like "passionate" or "cutting-edge."
-- Microcopy rules: Short headings, sentence case, active voice, one clear action per component.
+- Tone: Factual, concise, research-oriented, modest.
+- Terminology: Use established technical terms from the source CV and current role update.
+- Microcopy rules: No hype, emojis, vague superlatives, or fabricated metrics; dates and affiliations stay explicit.
 
 ## Implementation constraints
 
-- Framework/styling system: Dependency-free HTML, CSS, and JavaScript.
-- Design-token constraints: Use existing custom properties before adding one-off values.
-- Performance constraints: No client framework, external font, analytics, or heavy media.
-- Compatibility constraints: GitHub Pages static hosting; no server-side functionality.
-- Test/screenshot expectations: Validate HTML and links, load through a local HTTP server, inspect desktop and mobile screenshots.
+- Framework/styling system: Dependency-free HTML, CSS, and minimal JavaScript.
+- Design-token constraints: Reuse the CSS custom properties at the top of `styles.css`.
+- Performance constraints: No client framework, external font, large media, or runtime data fetching.
+- Compatibility constraints: GitHub Pages static deployment; content must remain useful without JavaScript.
+- Test/screenshot expectations: HTML validation, JS syntax check, link checks, Lighthouse, desktop 1440×1000 screenshot, mobile 390×844 screenshot, Visual Ralph verdict >= 90 against the approved synthesized reference direction.
 
 ## Open questions
 
-- [ ] Confirm preferred public name and professional title / Jiahao / high impact on hero copy.
-- [ ] Add current affiliation, education, and location if public / Jiahao / medium impact on credibility.
-- [ ] Add a public email, Google Scholar, ORCID, and CV link / Jiahao / high impact on academic contact flow.
-- [ ] Replace research-exploration repositories with original publications or projects as they become public / Jiahao / high impact on portfolio strength.
+- [ ] Replace the temporary GitHub avatar with a professional portrait / Jiahao / high visual impact.
+- [ ] Confirm the exact Noitom full-time start month and whether `NR AI` should be public / Jiahao / medium content impact.
+- [ ] Decide when to publish the two CV-listed papers / Jiahao / high academic impact.
+- [ ] Add downloadable CV, LinkedIn, and ORCID URLs if available / Jiahao / medium contact impact.

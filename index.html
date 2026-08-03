@@ -5,294 +5,275 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta
       name="description"
-      content="Jiahao Ji is an AI researcher and engineer exploring learning systems for geometry, physics, and the 3D world."
+      content="Jiahao Ji is an algorithm researcher at Noitom Robotics working on embodied motion data, Real2Sim2Real, 3D reconstruction, and robot learning."
     >
-    <meta name="theme-color" content="#f4f2ed">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Jiahao Ji — AI Researcher & Engineer">
+    <meta name="theme-color" content="#ffffff">
+    <meta property="og:type" content="profile">
+    <meta property="og:title" content="Jiahao Ji — Algorithm Researcher">
     <meta
       property="og:description"
-      content="Research, projects, and notes on embodied AI, 3D vision, and physics-informed learning."
+      content="Research in embodied intelligence, motion data, Real2Sim2Real, and 3D reconstruction."
     >
     <meta property="og:url" content="https://jiahao-ji-777.github.io/">
-    <title>Jiahao Ji — AI Researcher &amp; Engineer</title>
+    <title>Jiahao Ji — Algorithm Researcher</title>
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="styles.css">
-    <script>
-      document.documentElement.classList.add("js");
-      document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
-    </script>
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
 
-    <header class="site-header" data-header>
-      <a class="wordmark" href="#top" aria-label="Jiahao Ji, home">
-        <span>Jiahao Ji</span><i aria-hidden="true"></i>
-      </a>
-
-      <nav class="site-nav" aria-label="Primary navigation">
-        <a href="#about">About</a>
-        <a href="#work">Work</a>
-        <a href="#notes">Notes</a>
-        <a href="#contact">Contact</a>
-      </nav>
-
-      <button class="theme-toggle" type="button" aria-label="Switch color theme" data-theme-toggle>
-        <svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18">
-          <path d="M12 3v2M12 19v2M3 12h2M19 12h2M5.64 5.64l1.42 1.42M16.94 16.94l1.42 1.42M18.36 5.64l-1.42 1.42M7.06 16.94l-1.42 1.42" />
-          <circle cx="12" cy="12" r="4" />
-        </svg>
-      </button>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="site-name" href="#top">Jiahao Ji</a>
+        <nav aria-label="Primary navigation">
+          <a href="#research">Research</a>
+          <a href="#experience">Experience</a>
+          <a href="#publications">Publications</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
     </header>
 
-    <main id="main">
-      <section class="hero section" id="top" aria-labelledby="hero-title">
-        <div class="hero-copy" data-reveal>
-          <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span>AI Researcher &amp; Engineer</p>
-          <h1 id="hero-title">Building intelligence<br>that understands<br><em>the physical world.</em></h1>
-          <p class="hero-intro">
-            I'm <strong>Jiahao Ji</strong>. I explore learning systems at the intersection of geometry,
-            physics, and 3D perception—turning research ideas into systems that work.
-          </p>
-          <div class="hero-actions">
-            <a class="button button-primary" href="#work">Explore my work <span aria-hidden="true">↘</span></a>
-            <a class="text-link" href="https://github.com/jiahao-ji-777" target="_blank" rel="noreferrer">
-              GitHub <span aria-hidden="true">↗</span>
-            </a>
-          </div>
-        </div>
-
-        <div class="hero-visual" aria-hidden="true" data-reveal>
-          <div class="visual-index">01 — PROFILE</div>
-          <div class="portrait-frame">
+    <main class="page" id="main">
+      <article class="paper">
+        <section class="profile" id="top" aria-labelledby="profile-name">
+          <div class="profile-photo">
             <img
               src="https://avatars.githubusercontent.com/u/237193702?v=4"
-              alt=""
-              width="460"
-              height="460"
+              alt="Jiahao Ji's current GitHub profile image"
+              width="260"
+              height="260"
             >
-            <div class="orbit orbit-one"><i></i></div>
-            <div class="orbit orbit-two"><i></i></div>
           </div>
-          <div class="visual-caption">
-            <span>Curious by default.</span>
-            <span>Grounded by evidence.</span>
-          </div>
-        </div>
 
-        <div class="hero-scroll" aria-hidden="true">
-          <span>Scroll to explore</span>
-          <i></i>
-        </div>
-      </section>
-
-      <section class="signal-strip section" aria-label="Current research snapshot" data-reveal>
-        <div>
-          <span>Currently</span>
-          <p>Building physics-aware learning systems</p>
-        </div>
-        <div>
-          <span>Exploring</span>
-          <p>Geometry priors for 3D perception</p>
-        </div>
-        <div>
-          <span>Open to</span>
-          <p>Research conversations &amp; collaboration</p>
-        </div>
-      </section>
-
-      <section class="about section" id="about" aria-labelledby="about-title">
-        <div class="section-label" data-reveal>
-          <span>01</span>
-          <p>About</p>
-        </div>
-        <div class="about-content" data-reveal>
-          <h2 id="about-title">I care about the space where elegant ideas meet messy reality.</h2>
-          <div class="about-grid">
+          <div class="profile-content">
+            <p class="role">Algorithm Researcher · Noitom Robotics</p>
+            <h1 id="profile-name">Jiahao Ji <span>季嘉豪</span></h1>
             <p>
-              My interests span <strong>3D vision</strong>, <strong>physics-informed learning</strong>, and
-              intelligent systems that can perceive and interact with the world. I enjoy moving between
-              first principles, experiments, and robust implementation.
+              I am a full-time Algorithm Researcher at <strong>Noitom Robotics</strong>. My work focuses on
+              embodied motion data, scalable task generation, Real2Sim2Real pipelines, and 3D reconstruction
+              for robotics.
             </p>
             <p>
-              This site is a living record of what I'm building, reading, and learning. I'm especially
-              interested in research that is technically rigorous, visually intuitive, and useful beyond
-              a benchmark.
+              I am interested in building structured data and learning systems that connect human motion,
+              physical interaction, and robot intelligence. Before joining Noitom, I worked with Seed Robotics
+              at ByteDance on digital asset reconstruction and dexterous manipulation.
             </p>
+
+            <div class="profile-links">
+              <a href="mailto:jiahao.ji@foxmail.com">Email</a>
+              <a href="https://scholar.google.com/citations?hl=en&amp;user=3dhUvVYAAAAJ" target="_blank" rel="noreferrer">Google Scholar</a>
+              <a href="https://github.com/jiahao-ji-777" target="_blank" rel="noreferrer">GitHub</a>
+            </div>
           </div>
-          <ul class="interest-list">
-            <li><span>01</span>3D Vision &amp; Reconstruction</li>
-            <li><span>02</span>Physics-informed Learning</li>
-            <li><span>03</span>Embodied Intelligence</li>
-            <li><span>04</span>Research Engineering</li>
+        </section>
+
+        <section class="section news" aria-labelledby="news-title">
+          <div class="section-heading">
+            <p class="section-kicker">Updates</p>
+            <h2 id="news-title">News</h2>
+          </div>
+          <ul class="news-list">
+            <li>
+              <time datetime="2026">2026</time>
+              <p>Joined <strong>Noitom Robotics</strong> as a full-time Algorithm Researcher.</p>
+            </li>
           </ul>
-          <div class="research-questions">
-            <p class="research-questions-label">Questions I keep returning to</p>
-            <ol>
-              <li>How can geometry and physics make learned systems generalize beyond familiar data?</li>
-              <li>Which representations preserve the structure that matters for long-horizon behavior?</li>
-              <li>What turns a promising research result into a dependable real-world system?</li>
-            </ol>
+        </section>
+
+        <section class="section" id="research" aria-labelledby="research-title">
+          <div class="section-heading">
+            <p class="section-kicker">Focus</p>
+            <h2 id="research-title">Research Interests</h2>
           </div>
-        </div>
-      </section>
-
-      <section class="work section" id="work" aria-labelledby="work-title">
-        <div class="section-label" data-reveal>
-          <span>02</span>
-          <p>Selected work</p>
-        </div>
-        <div class="section-heading" data-reveal>
-          <h2 id="work-title">Projects &amp;<br><em>explorations.</em></h2>
-          <p>A selection of current technical work and research threads.</p>
-        </div>
-
-        <div class="project-list">
-          <article class="project project-featured" data-reveal>
-            <div class="project-meta">
-              <span>Independent project</span>
-              <span>2026</span>
-            </div>
-            <div class="project-body">
-              <div class="project-number">01</div>
-              <div>
-                <h3>Hamiltonian Neural Networks</h3>
-                <p>
-                  Exploring long-term physical simulation—from pendulum validation to three-body dynamics—
-                  through structure-preserving neural models.
-                </p>
-                <ul class="tag-list">
-                  <li>Physics-informed ML</li>
-                  <li>Python</li>
-                  <li>Dynamical systems</li>
-                </ul>
-              </div>
-              <a
-                class="project-link"
-                href="https://github.com/jiahao-ji-777/EE5311_Blog"
-                target="_blank"
-                rel="noreferrer"
-                aria-label="View Hamiltonian Neural Networks project on GitHub"
-              >
-                <span>View project</span><b aria-hidden="true">↗</b>
-              </a>
-            </div>
-          </article>
-
-          <article class="project" data-reveal>
-            <div class="project-meta">
-              <span>Research exploration</span>
-              <span>3D Vision</span>
-            </div>
-            <div class="project-body">
-              <div class="project-number">02</div>
-              <div>
-                <h3>Geometry-Grounded Gaussian Splatting</h3>
-                <p>
-                  A study track around geometry-aware 3D Gaussian Splatting and the role of structural
-                  priors in high-quality reconstruction.
-                </p>
-                <ul class="tag-list">
-                  <li>3DGS</li>
-                  <li>Geometry</li>
-                  <li>Reconstruction</li>
-                </ul>
-              </div>
-              <a
-                class="project-link"
-                href="https://github.com/jiahao-ji-777/Geometry-Grounded-Gaussian-Splatting"
-                target="_blank"
-                rel="noreferrer"
-                aria-label="View Geometry-Grounded Gaussian Splatting repository on GitHub"
-              >
-                <span>View repository</span><b aria-hidden="true">↗</b>
-              </a>
-            </div>
-          </article>
-
-          <article class="project" data-reveal>
-            <div class="project-meta">
-              <span>Research exploration</span>
-              <span>Scene understanding</span>
-            </div>
-            <div class="project-body">
-              <div class="project-number">03</div>
-              <div>
-                <h3>Planar Priors for Indoor 3D</h3>
-                <p>
-                  Following recent work on vision-language planar priors and their use in high-fidelity
-                  indoor Gaussian Splatting.
-                </p>
-                <ul class="tag-list">
-                  <li>Vision-language</li>
-                  <li>Planar priors</li>
-                  <li>Python</li>
-                </ul>
-              </div>
-              <a
-                class="project-link"
-                href="https://github.com/jiahao-ji-777/PlanarGS"
-                target="_blank"
-                rel="noreferrer"
-                aria-label="View PlanarGS repository on GitHub"
-              >
-                <span>View repository</span><b aria-hidden="true">↗</b>
-              </a>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section class="notes section" id="notes" aria-labelledby="notes-title">
-        <div class="section-label" data-reveal>
-          <span>03</span>
-          <p>Notes</p>
-        </div>
-        <div class="notes-content" data-reveal>
-          <div class="section-heading section-heading-inline">
-            <h2 id="notes-title">Thinking<br><em>in public.</em></h2>
-            <p>Short notes on research, engineering, and ideas worth keeping.</p>
+          <div class="research-grid">
+            <article>
+              <span>01</span>
+              <h3>Embodied Motion Data</h3>
+              <p>Motion semantics, human-object interaction, collection protocols, quality control, and scalable task coverage.</p>
+            </article>
+            <article>
+              <span>02</span>
+              <h3>Generative Task Modeling</h3>
+              <p>LLM- and RAG-based generation of long-horizon tasks with controllable complexity and physical constraints.</p>
+            </article>
+            <article>
+              <span>03</span>
+              <h3>Real2Sim2Real</h3>
+              <p>Simulation-ready asset generation, articulated object modeling, parallel interaction data, and robot policy learning.</p>
+            </article>
+            <article>
+              <span>04</span>
+              <h3>3D Reconstruction</h3>
+              <p>Object- and scene-level RGB/RGB-D reconstruction, multi-camera pose registration, and editable 3D representations.</p>
+            </article>
           </div>
-          <a class="note-card" href="https://github.com/jiahao-ji-777/EE5311_Blog" target="_blank" rel="noreferrer">
+        </section>
+
+        <section class="section" id="experience" aria-labelledby="experience-title">
+          <div class="section-heading">
+            <p class="section-kicker">Background</p>
+            <h2 id="experience-title">Experience</h2>
+          </div>
+          <div class="timeline">
+            <article class="timeline-item">
+              <div class="timeline-date">2025 — Present</div>
+              <div>
+                <h3>Algorithm Researcher</h3>
+                <p class="timeline-org">Noitom Robotics · NR AI</p>
+                <p>
+                  Researching embodied motion-data modeling, automated generation of long-horizon human-object
+                  interaction tasks, and multi-scale 3D reconstruction. The work combines semantic organization,
+                  LLMs, retrieval systems, physical constraints, and data-quality design.
+                </p>
+              </div>
+            </article>
+            <article class="timeline-item">
+              <div class="timeline-date">Jun — Oct 2025</div>
+              <div>
+                <h3>Research Intern, Seed Robotics</h3>
+                <p class="timeline-org">ByteDance</p>
+                <p>
+                  Developed Real2Sim2Real pipelines for high-fidelity simulation assets and articulated objects,
+                  then used large-scale Isaac Lab environments to generate interaction data and train manipulation policies.
+                </p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section" aria-labelledby="education-title">
+          <div class="section-heading">
+            <p class="section-kicker">Training</p>
+            <h2 id="education-title">Education</h2>
+          </div>
+          <div class="timeline education-list">
+            <article class="timeline-item">
+              <div class="timeline-date">2024 — 2026</div>
+              <div>
+                <h3>National University of Singapore</h3>
+                <p class="timeline-org">M.Sc. in Electrical Engineering · GPA 4.39 / 5.00</p>
+              </div>
+            </article>
+            <article class="timeline-item">
+              <div class="timeline-date">2023 — 2024</div>
+              <div>
+                <h3>NUS Suzhou Research Institute</h3>
+                <p class="timeline-org">Joint Training Program · GPA 89.22 / 100.00</p>
+              </div>
+            </article>
+            <article class="timeline-item">
+              <div class="timeline-date">2020 — 2024</div>
+              <div>
+                <h3>Beijing Institute of Technology</h3>
+                <p class="timeline-org">B.Eng. in Electronic Information Engineering · GPA 3.5 / 4.0</p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section" aria-labelledby="projects-title">
+          <div class="section-heading">
+            <p class="section-kicker">Current work</p>
+            <h2 id="projects-title">Selected Projects</h2>
+          </div>
+          <div class="project-list">
+            <article class="project-row">
+              <div class="project-index">01</div>
+              <div>
+                <p class="project-meta">Noitom Robotics · Ongoing</p>
+                <h3>Scalable Embodied Motion Data Modeling</h3>
+                <p>
+                  A semantic and procedural framework for defining, decomposing, sampling, annotating, and validating
+                  large-scale human-motion and human-object interaction data.
+                </p>
+              </div>
+            </article>
+            <article class="project-row">
+              <div class="project-index">02</div>
+              <div>
+                <p class="project-meta">Noitom Robotics · Ongoing</p>
+                <h3>Long-Horizon Interaction Task Generation</h3>
+                <p>
+                  An LLM- and RAG-based generation pipeline that models assets, task distributions, temporal structure,
+                  and physical constraints for diverse multi-stage interaction scripts.
+                </p>
+              </div>
+            </article>
+            <article class="project-row">
+              <div class="project-index">03</div>
+              <div>
+                <p class="project-meta">NUS · 2024–2025</p>
+                <h3>Editable Real2Sim2Real 3D Reconstruction</h3>
+                <p>
+                  Instance-aware 3D Gaussian reconstruction with asset separation, scene completion, automatic candidate
+                  selection, and hybrid Gaussian-mesh simulation for robot-task validation.
+                </p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section" id="publications" aria-labelledby="publications-title">
+          <div class="section-heading">
+            <p class="section-kicker">Research output</p>
+            <h2 id="publications-title">Publications</h2>
+          </div>
+          <div class="publication-placeholder">
+            <div class="publication-thumb-placeholder" aria-hidden="true">Image</div>
             <div>
-              <span class="note-type">Research note · 8 min</span>
-              <h3>Can neural networks learn the laws of motion?</h3>
-              <p>A practical exploration of Hamiltonian structure, long-horizon stability, and physical simulation.</p>
+              <p class="publication-venue">Venue · Year</p>
+              <h3>No public entries yet</h3>
+              <p>Publication title, authors, and contribution details will appear here once approved.</p>
+              <div class="publication-link-placeholders" aria-hidden="true">
+                <span>Paper</span><span>Project</span><span>Code</span>
+              </div>
             </div>
-            <span class="note-arrow" aria-hidden="true">↗</span>
-          </a>
-          <div class="note-card note-card-soon">
-            <div>
-              <span class="note-type">Next up</span>
-              <h3>More field notes are on the way.</h3>
-              <p>I’m documenting experiments and lessons as they become useful—not just when they look finished.</p>
-            </div>
-            <span class="note-arrow" aria-hidden="true">…</span>
           </div>
-        </div>
-      </section>
 
-      <section class="contact section" id="contact" aria-labelledby="contact-title">
-        <div class="contact-orbit" aria-hidden="true"><i></i><b></b></div>
-        <div class="contact-copy" data-reveal>
-          <p class="eyebrow">Open to good questions &amp; ambitious ideas</p>
-          <h2 id="contact-title">Let's make something<br><em>worth understanding.</em></h2>
-          <p>
-            Interested in research collaborations, thoughtful technical conversations, and work that
-            connects learning with the physical world.
-          </p>
-          <a class="button button-inverse" href="https://github.com/jiahao-ji-777" target="_blank" rel="noreferrer">
-            Start a conversation <span aria-hidden="true">↗</span>
-          </a>
-        </div>
-      </section>
+          <!-- Publication row template, intentionally not rendered until entries are approved.
+          <article class="publication-row">
+            <img src="assets/publication-thumbnail.jpg" alt="">
+            <div>
+              <p class="publication-venue">Venue · Year</p>
+              <h3>Paper title</h3>
+              <p>Authors</p>
+              <p><a href="...">Paper</a> · <a href="...">Project</a> · <a href="...">Code</a></p>
+            </div>
+          </article>
+          -->
+        </section>
+
+        <section class="section" aria-labelledby="honors-title">
+          <div class="section-heading">
+            <p class="section-kicker">Selected</p>
+            <h2 id="honors-title">Honors</h2>
+          </div>
+          <ul class="honors-list">
+            <li><time datetime="2022-09">2022</time><span>National Champion, Formula Student Autonomous China 2022 Season</span></li>
+            <li><time datetime="2022-06">2021</time><span>National Champion, Formula Student Autonomous China 2021 Season</span></li>
+            <li><time datetime="2023-05">2023</time><span>National Third Prize, 21st National Information Security and Countermeasures Competition</span></li>
+          </ul>
+        </section>
+
+        <section class="contact section" id="contact" aria-labelledby="contact-title">
+          <div>
+            <p class="section-kicker">Contact</p>
+            <h2 id="contact-title">Let’s talk research.</h2>
+          </div>
+          <div class="contact-content">
+            <p>
+              I am interested in embodied intelligence, 3D reconstruction, motion data, and practical research systems.
+            </p>
+            <a href="mailto:jiahao.ji@foxmail.com">jiahao.ji@foxmail.com</a>
+          </div>
+        </section>
+      </article>
     </main>
 
     <footer class="site-footer">
       <p>© <span data-year></span> Jiahao Ji</p>
-      <p>Designed with curiosity. Built with restraint.</p>
-      <a href="#top">Back to top ↑</a>
+      <p>Last updated August 2026.</p>
     </footer>
 
     <script src="script.js" defer></script>
