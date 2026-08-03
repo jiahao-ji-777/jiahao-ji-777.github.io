@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Jiahao Ji is an AI researcher and engineer exploring learning systems for geometry, physics, and the 3D world."
+    >
+    <meta name="theme-color" content="#f4f2ed">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Jiahao Ji — AI Researcher & Engineer">
+    <meta
+      property="og:description"
+      content="Research, projects, and notes on embodied AI, 3D vision, and physics-informed learning."
+    >
+    <meta property="og:url" content="https://jiahao-ji-777.github.io/">
+    <title>Jiahao Ji — AI Researcher &amp; Engineer</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+    <script>
+      document.documentElement.classList.add("js");
+      document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" data-header>
+      <a class="wordmark" href="#top" aria-label="Jiahao Ji, home">
+        <span>Jiahao Ji</span><i aria-hidden="true"></i>
+      </a>
+
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#notes">Notes</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <button class="theme-toggle" type="button" aria-label="Switch color theme" data-theme-toggle>
+        <svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18">
+          <path d="M12 3v2M12 19v2M3 12h2M19 12h2M5.64 5.64l1.42 1.42M16.94 16.94l1.42 1.42M18.36 5.64l-1.42 1.42M7.06 16.94l-1.42 1.42" />
+          <circle cx="12" cy="12" r="4" />
+        </svg>
+      </button>
+    </header>
+
+    <main id="main">
+      <section class="hero section" id="top" aria-labelledby="hero-title">
+        <div class="hero-copy" data-reveal>
+          <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span>AI Researcher &amp; Engineer</p>
+          <h1 id="hero-title">Building intelligence<br>that understands<br><em>the physical world.</em></h1>
+          <p class="hero-intro">
+            I'm <strong>Jiahao Ji</strong>. I explore learning systems at the intersection of geometry,
+            physics, and 3D perception—turning research ideas into systems that work.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#work">Explore my work <span aria-hidden="true">↘</span></a>
+            <a class="text-link" href="https://github.com/jiahao-ji-777" target="_blank" rel="noreferrer">
+              GitHub <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true" data-reveal>
+          <div class="visual-index">01 — PROFILE</div>
+          <div class="portrait-frame">
+            <img
+              src="https://avatars.githubusercontent.com/u/237193702?v=4"
+              alt=""
+              width="460"
+              height="460"
+            >
+            <div class="orbit orbit-one"><i></i></div>
+            <div class="orbit orbit-two"><i></i></div>
+          </div>
+          <div class="visual-caption">
+            <span>Curious by default.</span>
+            <span>Grounded by evidence.</span>
+          </div>
+        </div>
+
+        <div class="hero-scroll" aria-hidden="true">
+          <span>Scroll to explore</span>
+          <i></i>
+        </div>
+      </section>
+
+      <section class="signal-strip section" aria-label="Current research snapshot" data-reveal>
+        <div>
+          <span>Currently</span>
+          <p>Building physics-aware learning systems</p>
+        </div>
+        <div>
+          <span>Exploring</span>
+          <p>Geometry priors for 3D perception</p>
+        </div>
+        <div>
+          <span>Open to</span>
+          <p>Research conversations &amp; collaboration</p>
+        </div>
+      </section>
+
+      <section class="about section" id="about" aria-labelledby="about-title">
+        <div class="section-label" data-reveal>
+          <span>01</span>
+          <p>About</p>
+        </div>
+        <div class="about-content" data-reveal>
+          <h2 id="about-title">I care about the space where elegant ideas meet messy reality.</h2>
+          <div class="about-grid">
+            <p>
+              My interests span <strong>3D vision</strong>, <strong>physics-informed learning</strong>, and
+              intelligent systems that can perceive and interact with the world. I enjoy moving between
+              first principles, experiments, and robust implementation.
+            </p>
+            <p>
+              This site is a living record of what I'm building, reading, and learning. I'm especially
+              interested in research that is technically rigorous, visually intuitive, and useful beyond
+              a benchmark.
+            </p>
+          </div>
+          <ul class="interest-list">
+            <li><span>01</span>3D Vision &amp; Reconstruction</li>
+            <li><span>02</span>Physics-informed Learning</li>
+            <li><span>03</span>Embodied Intelligence</li>
+            <li><span>04</span>Research Engineering</li>
+          </ul>
+          <div class="research-questions">
+            <p class="research-questions-label">Questions I keep returning to</p>
+            <ol>
+              <li>How can geometry and physics make learned systems generalize beyond familiar data?</li>
+              <li>Which representations preserve the structure that matters for long-horizon behavior?</li>
+              <li>What turns a promising research result into a dependable real-world system?</li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <section class="work section" id="work" aria-labelledby="work-title">
+        <div class="section-label" data-reveal>
+          <span>02</span>
+          <p>Selected work</p>
+        </div>
+        <div class="section-heading" data-reveal>
+          <h2 id="work-title">Projects &amp;<br><em>explorations.</em></h2>
+          <p>A selection of current technical work and research threads.</p>
+        </div>
+
+        <div class="project-list">
+          <article class="project project-featured" data-reveal>
+            <div class="project-meta">
+              <span>Independent project</span>
+              <span>2026</span>
+            </div>
+            <div class="project-body">
+              <div class="project-number">01</div>
+              <div>
+                <h3>Hamiltonian Neural Networks</h3>
+                <p>
+                  Exploring long-term physical simulation—from pendulum validation to three-body dynamics—
+                  through structure-preserving neural models.
+                </p>
+                <ul class="tag-list">
+                  <li>Physics-informed ML</li>
+                  <li>Python</li>
+                  <li>Dynamical systems</li>
+                </ul>
+              </div>
+              <a
+                class="project-link"
+                href="https://github.com/jiahao-ji-777/EE5311_Blog"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="View Hamiltonian Neural Networks project on GitHub"
+              >
+                <span>View project</span><b aria-hidden="true">↗</b>
+              </a>
+            </div>
+          </article>
+
+          <article class="project" data-reveal>
+            <div class="project-meta">
+              <span>Research exploration</span>
+              <span>3D Vision</span>
+            </div>
+            <div class="project-body">
+              <div class="project-number">02</div>
+              <div>
+                <h3>Geometry-Grounded Gaussian Splatting</h3>
+                <p>
+                  A study track around geometry-aware 3D Gaussian Splatting and the role of structural
+                  priors in high-quality reconstruction.
+                </p>
+                <ul class="tag-list">
+                  <li>3DGS</li>
+                  <li>Geometry</li>
+                  <li>Reconstruction</li>
+                </ul>
+              </div>
+              <a
+                class="project-link"
+                href="https://github.com/jiahao-ji-777/Geometry-Grounded-Gaussian-Splatting"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="View Geometry-Grounded Gaussian Splatting repository on GitHub"
+              >
+                <span>View repository</span><b aria-hidden="true">↗</b>
+              </a>
+            </div>
+          </article>
+
+          <article class="project" data-reveal>
+            <div class="project-meta">
+              <span>Research exploration</span>
+              <span>Scene understanding</span>
+            </div>
+            <div class="project-body">
+              <div class="project-number">03</div>
+              <div>
+                <h3>Planar Priors for Indoor 3D</h3>
+                <p>
+                  Following recent work on vision-language planar priors and their use in high-fidelity
+                  indoor Gaussian Splatting.
+                </p>
+                <ul class="tag-list">
+                  <li>Vision-language</li>
+                  <li>Planar priors</li>
+                  <li>Python</li>
+                </ul>
+              </div>
+              <a
+                class="project-link"
+                href="https://github.com/jiahao-ji-777/PlanarGS"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="View PlanarGS repository on GitHub"
+              >
+                <span>View repository</span><b aria-hidden="true">↗</b>
+              </a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="notes section" id="notes" aria-labelledby="notes-title">
+        <div class="section-label" data-reveal>
+          <span>03</span>
+          <p>Notes</p>
+        </div>
+        <div class="notes-content" data-reveal>
+          <div class="section-heading section-heading-inline">
+            <h2 id="notes-title">Thinking<br><em>in public.</em></h2>
+            <p>Short notes on research, engineering, and ideas worth keeping.</p>
+          </div>
+          <a class="note-card" href="https://github.com/jiahao-ji-777/EE5311_Blog" target="_blank" rel="noreferrer">
+            <div>
+              <span class="note-type">Research note · 8 min</span>
+              <h3>Can neural networks learn the laws of motion?</h3>
+              <p>A practical exploration of Hamiltonian structure, long-horizon stability, and physical simulation.</p>
+            </div>
+            <span class="note-arrow" aria-hidden="true">↗</span>
+          </a>
+          <div class="note-card note-card-soon">
+            <div>
+              <span class="note-type">Next up</span>
+              <h3>More field notes are on the way.</h3>
+              <p>I’m documenting experiments and lessons as they become useful—not just when they look finished.</p>
+            </div>
+            <span class="note-arrow" aria-hidden="true">…</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact section" id="contact" aria-labelledby="contact-title">
+        <div class="contact-orbit" aria-hidden="true"><i></i><b></b></div>
+        <div class="contact-copy" data-reveal>
+          <p class="eyebrow">Open to good questions &amp; ambitious ideas</p>
+          <h2 id="contact-title">Let's make something<br><em>worth understanding.</em></h2>
+          <p>
+            Interested in research collaborations, thoughtful technical conversations, and work that
+            connects learning with the physical world.
+          </p>
+          <a class="button button-inverse" href="https://github.com/jiahao-ji-777" target="_blank" rel="noreferrer">
+            Start a conversation <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span data-year></span> Jiahao Ji</p>
+      <p>Designed with curiosity. Built with restraint.</p>
+      <a href="#top">Back to top ↑</a>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
