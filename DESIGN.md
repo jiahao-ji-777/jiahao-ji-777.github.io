@@ -10,32 +10,32 @@
 ## Brand
 
 - Personality: Serious, clear, technically grounded, early-career, approachable.
-- Trust signals: Current role, education, focused research descriptions, dated experience, direct academic links, explicit empty publication state.
+- Trust signals: Current role, education, focused research descriptions, dated experience, direct academic links, and a source-backed publication entry.
 - Avoid: Portfolio-style slogans, oversized typography, orbital graphics, decorative animations, dark mode, badge walls, inflated metrics, and unverified publication claims.
 
 ## Product goals
 
 - Goals: Let research peers and hiring collaborators understand Jiahao's current role, background, and research focus quickly; provide an extensible publication-ready structure.
 - Non-goals: Marketing site, personal blog, automatic publication sync, or complete CV replacement.
-- Success signals: Current role and research topics are clear above the fold; visitors can find experience, education, publications, honors, and contact details in one page.
+- Success signals: Current role and research topics are clear above the fold; visitors can find publications, experience, and education in one page, with direct profile links remaining above the fold.
 
 ## Personas and jobs
 
 - Primary personas: Academic collaborators, research engineers, lab leads, and technical recruiters.
-- User jobs: Identify Jiahao's research direction, scan relevant experience, verify academic background, and make contact.
+- User jobs: Identify Jiahao's research direction, scan research output and relevant experience, verify academic background, and use the profile links to make contact.
 - Key contexts of use: Desktop research browsing, mobile sharing, CV/application links, and print/PDF capture.
 
 ## Information architecture
 
-- Primary navigation: Experience, Education, Publications, Contact.
+- Primary navigation: Publications, Experience, Education.
 - Core routes/screens: One anchored page.
-- Content hierarchy: Profile → News → Experience → Education → Publications → Honors → Contact.
+- Content hierarchy: Profile → News → Publications → Experience → Education.
 
 ## Design principles
 
 - Academic first: Information density and provenance matter more than visual novelty.
 - Quiet hierarchy: Typography, spacing, and thin rules organize the page without decorative UI.
-- Honest incompleteness: Missing publications or links stay visibly empty or hidden instead of being invented.
+- Honest incompleteness: Unavailable paper links remain visibly pending instead of pointing to an unverified destination.
 - Tradeoffs: The site prioritizes clarity and maintainability over distinctive portfolio interactions.
 
 ## Visual language
@@ -45,13 +45,13 @@
 - Spacing/layout rhythm: Centered 1000px page, generous but not theatrical section spacing, two-column section labels on desktop.
 - Shape/radius/elevation: Flat white academic document, circular profile image, thin borders, no decorative shadow.
 - Motion: Native anchor scrolling only; no entrance or decorative animation.
-- Imagery/iconography: One profile image, restrained company wordmarks in Experience, and publication thumbnails only when real entries are added; no icon library.
+- Imagery/iconography: One profile image, restrained company wordmarks in Experience, a robot emoji favicon, and publication thumbnails only when real entries are added; no icon library.
 
 ## Components
 
 - Existing components to reuse: Static HTML shell, deployment workflow, favicon, SEO files.
-- New/changed components: Academic profile, compact navigation, news list, logo-supported chronology rows, keyword lists, publication empty state, honors list.
-- Variants and states: Desktop two-column and mobile single-column layouts; empty and populated publication structures.
+- New/changed components: Academic profile, compact navigation, news list, logo-supported chronology rows, keyword lists, and a figure-led publication entry.
+- Variants and states: Desktop two-column and mobile single-column layouts; populated publication entries with an unavailable-paper state.
 - Token/component ownership: CSS variables and component rules in `styles.css`; factual content in `index.html`.
 
 ## Accessibility

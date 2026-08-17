@@ -13,12 +13,12 @@ Then open <http://localhost:8000>.
 ## Content provenance
 
 - Current role: user-confirmed full-time Algorithm Researcher at Noitom Robotics.
-- Education, prior experience, honors, email, and Scholar URL: provided Chinese CV.
+- Education, prior experience, email, and Scholar URL: provided Chinese CV.
 - Experience descriptions are intentionally limited to concise research keywords.
-- Company wordmarks are stored locally; Noitom is sourced from its official site and ByteDance from the public-domain text-logo copy on Wikimedia Commons.
+- Company wordmarks are stored locally; the Noitom Robotics logo is user-provided and ByteDance uses the public-domain text-logo copy on Wikimedia Commons.
 - CV source SHA256: `0d6e52bdb5d8ede746c78c114f0d61a9024df4766867a4057c631778df9439b1`.
 - Phone number and other unnecessary personal details are intentionally excluded.
-- Publications intentionally remain empty until the entries are explicitly approved for the public site.
+- HiPHI publication metadata and Figure 1 are sourced from the user-provided arXiv manuscript package; the paper link remains pending until its public URL is available.
 
 ## Files
 
@@ -41,7 +41,7 @@ Confirm or add:
 
 1. Professional portrait
 2. Exact Noitom start month and public team name
-3. Approved publication entries
+3. Public arXiv URL for HiPHI
 4. Public CV, LinkedIn, and ORCID links
 
 ## Publish
