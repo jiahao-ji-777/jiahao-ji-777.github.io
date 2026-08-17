@@ -94,6 +94,5 @@
 
 ## Open questions
 
-- [ ] Confirm the exact Noitom full-time start month and whether `NR AI` should be public / Jiahao / medium content impact.
 - [ ] Decide when to publish the two CV-listed papers / Jiahao / high academic impact.
 - [ ] Add downloadable CV, LinkedIn, and ORCID URLs if available / Jiahao / medium contact impact.
