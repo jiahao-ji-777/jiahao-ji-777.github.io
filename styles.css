@@ -307,16 +307,15 @@ nav a:hover {
   font-size: 0.94rem;
 }
 
+.timeline {
+  display: grid;
+  gap: 1.6rem;
+}
+
 .timeline-item {
   display: grid;
   grid-template-columns: 8rem minmax(0, 1fr);
   gap: 1.75rem;
-  padding: 1.35rem 0;
-  border-bottom: 1px solid var(--line);
-}
-
-.timeline-item:first-child {
-  padding-top: 0;
 }
 
 .timeline-date {
@@ -373,8 +372,8 @@ nav a:hover {
   content: "·";
 }
 
-.education-list .timeline-item {
-  padding-block: 1rem;
+.education-list {
+  gap: 1.25rem;
 }
 
 .publication-row {
