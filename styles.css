@@ -586,7 +586,7 @@ nav a:hover {
   }
 
   .news-list li {
-    grid-template-columns: 4rem minmax(0, 1fr);
+    grid-template-columns: 6rem minmax(0, 1fr);
     gap: 0.75rem;
   }
 
