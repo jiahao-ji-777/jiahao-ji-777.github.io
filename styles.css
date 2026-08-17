@@ -269,6 +269,8 @@ nav a:hover {
 }
 
 .news-list {
+  display: grid;
+  gap: 1.1rem;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -278,12 +280,7 @@ nav a:hover {
   display: grid;
   grid-template-columns: 6rem minmax(0, 1fr);
   gap: 1rem;
-  padding: 0.3rem 0 0.85rem;
-  border-bottom: 1px solid var(--line);
-}
-
-.news-list li:first-child {
-  padding-top: 0;
+  padding: 0;
 }
 
 .news-list p {
