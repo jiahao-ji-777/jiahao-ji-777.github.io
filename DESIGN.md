@@ -35,7 +35,6 @@
 
 - Academic first: Information density and provenance matter more than visual novelty.
 - Quiet hierarchy: Typography, spacing, and thin rules organize the page without decorative UI.
-- Honest incompleteness: Unavailable paper links remain visibly pending instead of pointing to an unverified destination.
 - Desktop composure: Wide screens should use their space for readable proportions and stronger publication presentation, not larger empty margins.
 - Tradeoffs: The site prioritizes clarity, scanability, and maintainability over distinctive portfolio interactions.
 
@@ -52,7 +51,7 @@
 
 - Existing components to reuse: Static HTML shell, deployment workflow, favicon, SEO files.
 - New/changed components: Academic profile, compact navigation, stable desktop section rail, news list, logo-supported chronology rows, keyword lists, and a figure-led publication entry.
-- Variants and states: Wide publication rows with a 320px-class figure, narrower two-column rows on tablet, single-column rows on mobile, and an unavailable-paper state.
+- Variants and states: Wide publication rows with a 320px-class figure, narrower two-column rows on tablet, and single-column rows on mobile.
 - Token/component ownership: CSS variables and component rules in `styles.css`; factual content in `index.html`.
 
 ## Accessibility
@@ -72,7 +71,7 @@
 ## Interaction states
 
 - Loading: All content and core visual assets are served locally as a static page.
-- Empty: Future missing publications stay absent; the current unavailable paper URL is shown as non-interactive pending text.
+- Empty: Future missing publications stay absent rather than appearing as placeholders.
 - Error: If the profile image fails, its dimensions remain reserved and text content is unaffected.
 - Success: Native link and email behavior.
 - Disabled: No disabled interactive elements.

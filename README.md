@@ -18,7 +18,7 @@ Then open <http://localhost:8000>.
 - Company wordmarks are stored locally; the Noitom Robotics logo is user-provided and ByteDance uses the public-domain text-logo copy on Wikimedia Commons.
 - CV source SHA256: `0d6e52bdb5d8ede746c78c114f0d61a9024df4766867a4057c631778df9439b1`.
 - Phone number and other unnecessary personal details are intentionally excluded.
-- HiPHI publication metadata and Figure 1 are sourced from the user-provided arXiv manuscript package; the paper link remains pending until its public URL is available.
+- HiPHI publication metadata and Figure 1 are sourced from the user-provided arXiv manuscript package; the public paper links to arXiv.
 
 ## Files
 

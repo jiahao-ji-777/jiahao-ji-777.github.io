@@ -433,8 +433,7 @@ nav a:hover {
   gap: 0.45rem 1rem;
 }
 
-.publication-links a,
-.publication-link--pending {
+.publication-links a {
   padding-bottom: 0.05rem;
   font-size: 0.82rem;
 }
@@ -446,10 +445,6 @@ nav a:hover {
 .publication-links a:hover {
   border-color: var(--link);
   text-decoration: none;
-}
-
-.publication-link--pending {
-  color: var(--muted);
 }
 
 .site-footer {
