@@ -376,6 +376,12 @@ nav a:hover {
   gap: 1.25rem;
 }
 
+.publication-list {
+  display: grid;
+  gap: 2rem;
+  min-width: 0;
+}
+
 .publication-row {
   display: grid;
   grid-template-columns: minmax(280px, 32%) minmax(0, 1fr);
@@ -391,6 +397,11 @@ nav a:hover {
   background: var(--accent-soft);
   border: 1px solid var(--line-strong);
   border-radius: 3px;
+}
+
+.publication-image--omnicontact {
+  object-fit: contain;
+  background: #fff;
 }
 
 .publication-content {
